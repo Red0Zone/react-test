@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page App</title>
+    <script>
+      const path = window.location.pathname;
+      window.history.replaceState({}, '', '/<your-repo-name>/');
+      window.location = path;
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
