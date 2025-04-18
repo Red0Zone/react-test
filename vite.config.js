@@ -6,5 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/<react-test>/', // Set this to match your repo name
   
 })
