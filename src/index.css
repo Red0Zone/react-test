@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme{
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-text: var(--text);
+  --color-background: var(--background);
+}
+
+/* Default theme variables */
+/* Theme variables are already defined in :root, removing @theme block */
+  
+    :root {
+      --primary: #ff0000;
+      --secondary: #ffffff;
+      --text: #e0e0e0;
+      --background: #000000;
+
+      font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      font-weight: 400;
+
+      color-scheme: light dark;
+      color: rgba(255, 255, 255, 0.87);
+      background-color: #242424;
+
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  
+
+
+/* Black theme */
+.theme-black:root {
+  --primary: #000000;
+  --secondary: #222222;
+  --text: #ffffff;
+  --background: #121212;
+}
+
+/* Red theme */
+.theme-red:root {
+  --primary: #e60000;
+  --secondary: #ffcccc;
+  --text: #ff0000be;
+  --background: #ffe6e6;
+}
+
+/* Orange theme */
+.theme-orange:root {
+  --primary: #ff8c00;
+  --secondary: #ffe5b4;
+  --text: #cc6600;
+  --background: #fff3e0;
+}
+
+/* Purple theme */
+.theme-purple:root {
+  --primary: #800080;
+  --secondary: #d8bfd8;
+  --text: #4b0082;
+  --background: #f3e6f3;
+}
+
+/* Cyan theme */
+.theme-cyan:root {
+  --primary: #00b7c2;
+  --secondary: #cceeff;
+  --text: #006666;
+  --background: #e0ffff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
